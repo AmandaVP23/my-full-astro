@@ -1,0 +1,13 @@
+
+services:
+    db:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: "admin" 
+            MYSQL_DATABASE: my_astro_full            
+            MYSQL_USER: user                   
+            MYSQL_PASSWORD: "user"      
+        ports:
+            - "3306:3306"
+            

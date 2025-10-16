@@ -1,7 +1,7 @@
 import { actions } from "astro:actions";
 function SomeComponent() {
     const doSomething = async () => {
-        const { data, error } = await actions.getGreeting({ name: 'Peter' });
+        const { data, error } = await actions.getGreeting({ name: 'John' });
 
         console.log(data);
     }

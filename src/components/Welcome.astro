@@ -1,5 +1,6 @@
 ---
 import '../assets/styles/welcome.scss';
+import SomeComponent from './SomeComponent';
 
 // try doing the script in a react component
 ---
@@ -7,6 +8,7 @@ import '../assets/styles/welcome.scss';
 <div class="welcome">
 	<h1>Hello</h1>
 	<button id="greet-btn">Get Greeting</button>
+	<SomeComponent client:load />
 </div>
 
 <script>

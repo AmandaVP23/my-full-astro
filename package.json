@@ -8,19 +8,18 @@
     "preview": "astro preview",
     "astro": "astro",
     "prisma:migrate": "npx prisma migrate dev --name init",
-    "prisma:generate": "npx prisma generate",
+    "prisma:generate": "dotenv -e .env npx prisma generate",
     "prisma:studio": "npx prisma studio"
   },
   "dependencies": {
     "@astrojs/node": "^9.5.0",
     "@prisma/client": "^6.17.1",
     "astro": "^5.14.5",
+    "dotenv-cli": "^10.0.0",
     "sass": "^1.93.2"
   },
   "devDependencies": {
+    "dotenv": "^17.2.3",
     "prisma": "^6.17.1"
-  },
-  "prisma": {
-    "schema": "./src/prisma/schema.prisma"
   }
 }

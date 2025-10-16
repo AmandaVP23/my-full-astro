@@ -1,6 +1,9 @@
 // import { PrismaClient } from "@prisma/client"; 
 import { PrismaClient } from "../generated/prisma/client";
+import * as dotenv from 'dotenv'
 
+dotenv.config()
+    
 declare global {
     // allow global prisma to avoid creating new instances in dev
     var prisma: PrismaClient | undefined;

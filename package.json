@@ -21,9 +21,14 @@
     "dotenv-cli": "^10.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sass": "^1.93.2"
+    "sass": "^1.93.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-dist": "^5.29.4",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-dist": "^3.30.6",
     "dotenv": "^17.2.3",
     "prisma": "^6.17.1"
   }

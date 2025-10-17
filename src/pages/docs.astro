@@ -1,0 +1,26 @@
+---
+import 'swagger-ui-dist/swagger-ui.css';
+const title = "API Documentation";
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+</head>
+<body>
+  <div id="swagger-ui"></div>
+</body>
+</html>
+
+<script>
+    import { SwaggerUIBundle } from 'swagger-ui-dist';
+
+    window.onload = function() {
+        SwaggerUIBundle({
+            url: '/api/openapi.json',
+            dom_id: '#swagger-ui',
+        });
+    }
+</script>
